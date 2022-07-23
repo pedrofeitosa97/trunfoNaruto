@@ -112,6 +112,10 @@ input,label {
   opacity: 0.2;
 }
 
+input:disabled+label {
+  opacity: 0.4;
+}
+
 #btnJogar {
   background: #5E5DF0;
   border-radius: 1.2rem;
