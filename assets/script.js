@@ -30,12 +30,17 @@ function sortearCartaUsuario() {
 
 function receberAtributo() {
   let radioAtributo = document.getElementsByName('atributos')
+  let sum = 0
   for (let i = 0; i < 4; i++) {
     if (radioAtributo[i].checked) {
+      sum += 1
       let selecionado = radioAtributo[i].value
       iniciarRodada(selecionado)
       radioAtributo[i].checked = false
     }
+  }
+  if (sum == 0) {
+    alertaErro()
   }
 }
 
@@ -155,7 +160,7 @@ function alertaErro() {
     cardAlerta.classList.remove('animate__animated', 'animate__fadeOut')
     cardAlerta.classList.remove('animate__animated', 'animate__fadeIn')
     cardAlerta.style = `visibility: hidden`
-  }, 5000)
+  }, 4500)
 }
 /* <div class="cartaUsuario">
 <img />
