@@ -31,16 +31,15 @@ function sortearCartaUsuario() {
 function receberAtributo() {
   let radioAtributo = document.getElementsByName('atributos')
   for (let i = 0; i < 4; i++) {
-    if (radioAtributo[i].checked == false) {
-      alertaErro()
-      if (radioAtributo[i].checked) {
-        let selecionado = radioAtributo[i].value
-        iniciarRodada(selecionado)
-        radioAtributo[i].checked = false
-      }
+    if (radioAtributo[i].checked) {
+      let selecionado = radioAtributo[i].value
+      iniciarRodada(selecionado)
+      radioAtributo[i].checked = false
     }
   }
 }
+
+//alertaErro()
 
 function criarCartaUsuario(carta) {
   let divPrincipal = document.querySelector('.cartaUsuario')
