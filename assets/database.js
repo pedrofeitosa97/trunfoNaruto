@@ -108,7 +108,7 @@ const personagens = [
     inteligencia: '80'
   },
   {
-    nome: 'Tsunade',
+    nome: 'Senju Tsunade',
     foto: './img/tsunade.png',
     aldeia: 'folha',
     ninjutsu: '85',
@@ -117,7 +117,7 @@ const personagens = [
     inteligencia: '85'
   },
   {
-    nome: 'Madara',
+    nome: 'Uchiha Madara',
     foto: './img/madara.png',
     aldeia: 'folha',
     ninjutsu: '95',
@@ -135,7 +135,7 @@ const personagens = [
     inteligencia: '75'
   },
   {
-    nome: 'Kurenai',
+    nome: 'Yuuhi Kurenai',
     foto: './img/kurenai.png',
     aldeia: 'folha',
     ninjutsu: '75',
@@ -144,7 +144,7 @@ const personagens = [
     inteligencia: '85'
   },
   {
-    nome: 'Zabuza',
+    nome: 'Momochi Zabuza',
     foto: './img/zabuza.png',
     aldeia: 'névoa',
     ninjutsu: '85',
