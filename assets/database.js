@@ -115,5 +115,41 @@ const personagens = [
     taijutsu: '95',
     genjutsu: '45',
     inteligencia: '85'
+  },
+  {
+    nome: 'Madara',
+    foto: './img/madara.png',
+    aldeia: 'folha',
+    ninjutsu: '95',
+    taijutsu: '85',
+    genjutsu: '95',
+    inteligencia: '85'
+  },
+  {
+    nome: 'Rock Lee',
+    foto: './img/rocklee.png',
+    aldeia: 'folha',
+    ninjutsu: '35',
+    taijutsu: '90',
+    genjutsu: '15',
+    inteligencia: '75'
+  },
+  {
+    nome: 'Kurenai',
+    foto: './img/kurenai.png',
+    aldeia: 'folha',
+    ninjutsu: '75',
+    taijutsu: '65',
+    genjutsu: '85',
+    inteligencia: '85'
+  },
+  {
+    nome: 'Zabuza',
+    foto: './img/zabuza.png',
+    aldeia: 'névoa',
+    ninjutsu: '85',
+    taijutsu: '80',
+    genjutsu: '65',
+    inteligencia: '80'
   }
 ]
