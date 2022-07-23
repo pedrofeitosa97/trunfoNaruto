@@ -1,3 +1,8 @@
+document.getElementById('taijutsu').disabled = true
+document.getElementById('ninjutsu').disabled = true
+document.getElementById('genjutsu').disabled = true
+document.getElementById('inteligencia').disabled = true
+
 function sortearCartaUsuario() {
   let cartaMaquina = parseInt(Math.random() * personagens.length)
   let cartaUsuario = parseInt(Math.random() * personagens.length)
