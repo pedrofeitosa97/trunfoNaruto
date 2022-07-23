@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="preloader.css">
+    <title>Trunfo Naruto</title>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="loader"></div>
+    </div>
+    <header class="wrapper">
+      <img class ="h1" src="./img/superNaruto.png">
+    </header>
+    <div class="resultado wrapper">
+      <p>Você venceu o duelo!</p>
+    </div>
+    <main>
+      <section class="cartas wrapper">
+        <div class="cartaUsuario"></div>
+        <section class="infosJogo">
+          <p class="infosInicio">
+            Selecione seu atributo antes de iniciar a rodada
+          </p>
+          <input
+            class="taijutsuRadio"
+            type="radio"
+            name="atributos"
+            id="taijutsu"
+            value="taijutsu"
+          />
+          <label for="taijutsu">TAIJUTSU</label><br />
+          <input type="radio" name="atributos" id="ninjutsu" value="ninjutsu" />
+          <label for="ninjutsu">NINJUTSU</label><br />
+          <input type="radio" name="atributos" id="genjutsu" value="genjutsu" />
+          <label for="genjutsu">GENJUTSU</label><br />
+          <input
+            type="radio"
+            name="atributos"
+            id="inteligencia"
+            value="inteligencia"
+          />
+          <label for="inteligencia">INTELIGÊNCIA</label><br />
+          <button
+          id="sortearCartas"
+          onclick="sortearCartaUsuario()"
+          class="sortearCartas"
+        >
+          Sortear cartas
+        </button>
+          <button
+            id="btnJogar"
+            onclick="receberAtributo()"
+            class="btnJogar"
+            type="submit"
+            disabled
+          >
+            Iniciar Rodada
+          </button>
+        </section>
+        <div class="cartaMaquina">
+      </section>
+    </main>
+    <footer>
+      <p>Desenvolvido com ❤️ por: <a href="https://www.linkedin.com/in/pedrohenriquefeitosa/">Pedro Feitosa</a></p>
+    </footer>
+    <script src="./assets/script.js"></script>
+    <script src="./assets/database.js"></script>
+    <script src = "./assets/preloader.js"></script>
+  </body>
+</html>
