@@ -147,7 +147,7 @@ function revelarAdversario() {
 
 function alertaErro() {
   let cardAlerta = document.querySelector('.alert')
-  cardAlerta.classList.add('animate__animated', 'animate__fadeIn')
+  cardAlerta.classList.add('animate__animated', 'animate__fadeInRightBig')
   cardAlerta.style = `visibility: visible`
   setTimeout(function () {
     cardAlerta.classList.add('animate__animated', 'animate__fadeOut')
@@ -156,7 +156,7 @@ function alertaErro() {
     cardAlerta.classList.remove('animate__animated', 'animate__fadeOut')
     cardAlerta.classList.remove('animate__animated', 'animate__fadeIn')
     cardAlerta.style = `visibility: hidden`
-  }, 7000)
+  }, 5000)
 }
 /* <div class="cartaUsuario">
 <img />
