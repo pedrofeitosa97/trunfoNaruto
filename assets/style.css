@@ -24,7 +24,7 @@ body {
   font-family: 'Fira Sans', sans-serif;
   font-size: 1.6rem;
   overflow: hidden;
-  background-image: url('/img/background.jpg');
+  background-image: url('../img/background.jpg');
   background-size: cover;
 }
 
@@ -61,7 +61,7 @@ img {
 .cartaMaquina {
   width: 27rem;
   height: 40rem;
-  background: url('/img/backgroundcarta.jpg');
+  background: url('../img/backgroundcarta.jpg');
   border-radius: 1.2rem;
   padding: 1.5rem 2rem;
 }
