@@ -216,3 +216,21 @@ footer {
   font-size: 2rem;
   color: rgb(211, 105, 11);
 }
+
+.alert {
+  position: absolute;
+  background-color: red;
+  color: white;
+  width: 25rem;
+  height: 5rem;
+  top: 60rem;
+  left: 35rem;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 15px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 12px;
+  opacity: 0.5;
+}

@@ -15,6 +15,9 @@
     <div class="overlay">
       <div class="loader"></div>
     </div>
+    <div class="alert">
+      <p class = "selectOption">Selecione alguma opção</p>
+    </div>
     <header class="wrapper">
       <img class ="h1" src="./img/superNaruto.png">
     </header>
@@ -34,17 +37,19 @@
             name="atributos"
             id="taijutsu"
             value="taijutsu"
+            required
           />
           <label for="taijutsu">TAIJUTSU</label><br />
-          <input type="radio" name="atributos" id="ninjutsu" value="ninjutsu" />
+          <input type="radio" name="atributos" id="ninjutsu" value="ninjutsu" required/>
           <label for="ninjutsu">NINJUTSU</label><br />
-          <input type="radio" name="atributos" id="genjutsu" value="genjutsu" />
+          <input type="radio" name="atributos" id="genjutsu" value="genjutsu" required/>
           <label for="genjutsu">GENJUTSU</label><br />
           <input
             type="radio"
             name="atributos"
             id="inteligencia"
             value="inteligencia"
+            required
           />
           <label for="inteligencia">INTELIGÊNCIA</label><br />
           <button

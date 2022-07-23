@@ -31,10 +31,13 @@ function sortearCartaUsuario() {
 function receberAtributo() {
   let radioAtributo = document.getElementsByName('atributos')
   for (let i = 0; i < 4; i++) {
-    if (radioAtributo[i].checked) {
-      let selecionado = radioAtributo[i].value
-      iniciarRodada(selecionado)
-      radioAtributo[i].checked = false
+    if (radioAtributo[i].checked == false) {
+      alertaErro()
+      if (radioAtributo[i].checked) {
+        let selecionado = radioAtributo[i].value
+        iniciarRodada(selecionado)
+        radioAtributo[i].checked = false
+      }
     }
   }
 }
@@ -142,6 +145,19 @@ function revelarAdversario() {
   adversario = []
 }
 
+function alertaErro() {
+  let cardAlerta = document.querySelector('.alert')
+  cardAlerta.classList.add('animate__animated', 'animate__fadeIn')
+  cardAlerta.style = `visibility: visible`
+  setTimeout(function () {
+    cardAlerta.classList.add('animate__animated', 'animate__fadeOut')
+  }, 4000)
+  setTimeout(function () {
+    cardAlerta.classList.remove('animate__animated', 'animate__fadeOut')
+    cardAlerta.classList.remove('animate__animated', 'animate__fadeIn')
+    cardAlerta.style = `visibility: hidden`
+  }, 7000)
+}
 /* <div class="cartaUsuario">
 <img />
 <p class="nome">Uzumaki Naruto</p>
