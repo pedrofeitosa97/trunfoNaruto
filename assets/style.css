@@ -133,7 +133,8 @@ input:disabled+label {
 }
 
 .nome {
-  margin-top: 1.8remrgb(59, 47, 4)
+  margin-top: 1.8rem;
+  color: rgb(59, 47, 4);
 }
 
 .cardContent {
