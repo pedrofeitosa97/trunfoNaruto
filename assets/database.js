@@ -196,5 +196,14 @@ const personagens = [
     taijutsu: '40',
     genjutsu: '70',
     inteligencia: '90'
+  },
+  {
+    nome: 'Orochimaru',
+    foto: './img/orochimaru.png',
+    aldeia: 'folha',
+    ninjutsu: '95',
+    taijutsu: '60',
+    genjutsu: '85',
+    inteligencia: '90'
   }
 ]
