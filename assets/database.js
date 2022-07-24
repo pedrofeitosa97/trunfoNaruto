@@ -3,8 +3,8 @@ const personagens = [
     nome: 'Uzumaki Naruto (Shippuden)',
     foto: './img/naruto.png',
     aldeia: 'Folha',
-    ninjutsu: '95',
-    taijutsu: '85',
+    ninjutsu: '85',
+    taijutsu: '80',
     genjutsu: '20',
     inteligencia: '30'
   },
@@ -48,7 +48,7 @@ const personagens = [
     nome: 'Jiraya',
     foto: './img/jiraya.png',
     aldeia: 'Folha',
-    ninjutsu: '85',
+    ninjutsu: '90',
     taijutsu: '75',
     genjutsu: '40',
     inteligencia: '85'
@@ -86,7 +86,7 @@ const personagens = [
     aldeia: 'Folha',
     ninjutsu: '85',
     taijutsu: '85',
-    genjutsu: '95',
+    genjutsu: '99',
     inteligencia: '90'
   },
   {
@@ -204,6 +204,15 @@ const personagens = [
     ninjutsu: '95',
     taijutsu: '60',
     genjutsu: '85',
+    inteligencia: '90'
+  },
+  {
+    nome: 'Maito Guy',
+    foto: './img/guy.png',
+    aldeia: 'folha',
+    ninjutsu: '65',
+    taijutsu: '99',
+    genjutsu: '50',
     inteligencia: '90'
   }
 ]
