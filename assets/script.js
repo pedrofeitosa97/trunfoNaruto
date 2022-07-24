@@ -147,6 +147,7 @@ function iniciarRodada(atributo) {
 
 function revelarAdversario() {
   let cardContent = document.querySelector('.cardContent')
+  let cardTotal = document.querySelector('.cartaMaquina')
   cardContent.style = `display: block`
   document.getElementById('btnJogar').disabled = true
   document.getElementById('sortearCartas').disabled = false
@@ -154,7 +155,10 @@ function revelarAdversario() {
   document.getElementById('ninjutsu').disabled = true
   document.getElementById('genjutsu').disabled = true
   document.getElementById('inteligencia').disabled = true
-  cardContent.classList.add('animate__animated', 'animate__fadeIn')
+  cardTotal.classList.add('animate__animated', 'animate__flipInY')
+  setTimeout(function () {
+    cardTotal.classList.remove('animate__animated', 'animate__flipInY')
+  }, 1000)
   usuario = []
   adversario = []
 }
@@ -217,6 +221,7 @@ function pontoAdversario() {
     }, 2500)
   }
 }
+
 /* <div class="cartaUsuario">
 <img />
 <p class="nome">Uzumaki Naruto</p>
