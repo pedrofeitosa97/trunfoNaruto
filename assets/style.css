@@ -235,3 +235,20 @@ footer {
   border-radius: 12px;
   opacity: 0.5;
 }
+
+.placar {
+  display: flex;
+  background: radial-gradient(circle, rgba(0,0,0,0.5858718487394958) 0%, rgba(0,0,0,1) 57%, rgba(0,0,0,1) 95%, rgba(36,36,36,1) 100%);
+  flex-direction: column;
+  border-radius: 1.2rem;
+  color: white;
+  text-align: left;
+  margin-inline: auto;
+  margin-top: 5rem;
+  height: 8rem;
+  width: 35rem;
+  display: flex;
+  font-size: 2.2rem;
+  padding: 1.5rem 1.5rem;
+  visibility: hidden;
+}

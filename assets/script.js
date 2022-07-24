@@ -86,50 +86,60 @@ let usuario = []
 let adversario = []
 
 function iniciarRodada(atributo) {
+  let placarContent = document.querySelector('.placar')
+  placarContent.style = `visibility: visible; animation: fadeIn; animation-duration: 2s; text-align: left`
   let resultado = document.querySelector('.resultado')
   if (atributo == 'ninjutsu') {
     if (usuario[0].ninjutsu > adversario[0].ninjutsu) {
       resultado.innerHTML = `<p>Você <span class ="Win">venceu</span> o duelo!</p>`
       resultado.style = `visibility: visible; animation: fadeIn; animation-duration: 2s;`
+      pontoUsuario()
     } else if (usuario[0].ninjutsu == adversario[0].ninjutsu) {
       resultado.innerHTML = `<p>Você <span class ="Draw">empatou</span> com o adversário!</p>`
       resultado.style = `visibility: visible; animation: fadeIn; animation-duration: 2s;`
     } else {
       resultado.innerHTML = `<p>Você <span class ="Lose">perdeu</span> o duelo!</p>`
       resultado.style = `visibility: visible; animation: fadeIn; animation-duration: 2s;`
+      pontoAdversario()
     }
   } else if (atributo == 'taijutsu') {
     if (usuario[0].taijutsu > adversario[0].taijutsu) {
       resultado.innerHTML = `<p>Você <span class ="Win">venceu</span> o duelo!</p>`
       resultado.style = `visibility: visible; animation: fadeIn; animation-duration: 2s;`
+      pontoUsuario()
     } else if (usuario[0].taijutsu == adversario[0].taijutsu) {
       resultado.innerHTML = `<p>Você <span class ="Draw">empatou</span> com o adversário!</p>`
       resultado.style = `visibility: visible; animation: fadeIn; animation-duration: 2s;`
     } else {
       resultado.innerHTML = `<p>Você <span class ="Lose">perdeu</span> o duelo!</p>`
       resultado.style = `visibility: visible; animation: fadeIn; animation-duration: 2s;`
+      pontoAdversario()
     }
   } else if (atributo == 'genjutsu') {
     if (usuario[0].genjutsu > adversario[0].genjutsu) {
       resultado.innerHTML = `<p>Você <span class ="Win">venceu</span> o duelo!</p>`
       resultado.style = `visibility: visible; animation: fadeIn; animation-duration: 2s;`
+      pontoUsuario()
     } else if (usuario[0].genjutsu == adversario[0].genjutsu) {
       resultado.innerHTML = `<p>Você <span class ="Draw">empatou</span> com o adversário!</p>`
       resultado.style = `visibility: visible; animation: fadeIn; animation-duration: 2s;`
     } else {
       resultado.innerHTML = `<p>Você <span class ="Lose">perdeu</span> o duelo!</p>`
       resultado.style = `visibility: visible; animation: fadeIn; animation-duration: 2s;`
+      pontoAdversario()
     }
   } else if (atributo == 'inteligencia') {
     if (usuario[0].inteligencia > adversario[0].inteligencia) {
       resultado.innerHTML = `<p>Você <span class ="Win">venceu</span> o duelo!</p>`
       resultado.style = `visibility: visible; animation: fadeIn; animation-duration: 2s;`
+      pontoUsuario()
     } else if (usuario[0].inteligencia == adversario[0].inteligencia) {
       resultado.innerHTML = `<p>Você <span class ="Draw">empatou</span> com o adversário!</p>`
       resultado.style = `visibility: visible; animation: fadeIn; animation-duration: 2s;`
     } else {
       resultado.innerHTML = `<p>Você <span class ="Lose">perdeu</span> o duelo!</p>`
       resultado.style = `visibility: visible; animation: fadeIn; animation-duration: 2s;`
+      pontoAdversario()
     }
   }
   revelarAdversario()
@@ -161,6 +171,51 @@ function alertaErro() {
     cardAlerta.classList.remove('animate__animated', 'animate__fadeIn')
     cardAlerta.style = `visibility: hidden`
   }, 4500)
+}
+
+let placarUsuario = 0
+function pontoUsuario() {
+  let placar = document.querySelector('.pontoUsuario')
+  placarUsuario++
+  placar.innerHTML = `Você: ${placarUsuario}`
+  if (placarUsuario == 5) {
+    let placarContent = document.querySelector('.placar')
+    placarContent.innerHTML = `Você venceu do adversário!`
+    placarContent.innerHTML = `Você pontuou 5 vezes.`
+    placarContent.style = `visibility: visible; animation: fadeIn; animation-duration: 2s; text-align: center`
+    placarUsuario = 0
+    placarAdversario = 0
+    setTimeout(function () {
+      let placarContent = document.querySelector('.placar')
+      placarContent.style = `visibility: visible; text-align: left`
+      placarContent.innerHTML = `
+      <p class ="pontoUsuario">Você:</p>
+      <p class = "pontoAdversario">Adversário: </p>`
+    }, 2500)
+  }
+}
+
+let placarAdversario = 0
+
+function pontoAdversario() {
+  let placar = document.querySelector('.pontoAdversario')
+  placarAdversario++
+  placar.innerHTML = `Adversário: ${placarAdversario}`
+
+  if (placarAdversario == 5) {
+    let placarContent = document.querySelector('.placar')
+    placarContent.innerHTML = `O adversário pontuou 5 vezes.`
+    placarContent.style = `visibility: visible; animation: fadeIn; animation-duration: 2s; text-align: center`
+    placarUsuario = 0
+    placarAdversario = 0
+    setTimeout(function () {
+      let placarContent = document.querySelector('.placar')
+      placarContent.style = `visibility: visible; text-align: left`
+      placarContent.innerHTML = `
+      <p class ="pontoUsuario">Você:</p>
+      <p class = "pontoAdversario">Adversário: </p>`
+    }, 2500)
+  }
 }
 /* <div class="cartaUsuario">
 <img />
