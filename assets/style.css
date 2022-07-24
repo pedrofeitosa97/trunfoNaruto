@@ -23,7 +23,7 @@ html, body {
 body {
   font-family: 'Fira Sans', sans-serif;
   font-size: 1.6rem;
-  overflow: hidden;
+  overflow-x: hidden;
   background-image: url('../img/background.jpg');
   background-size: cover;
 }
