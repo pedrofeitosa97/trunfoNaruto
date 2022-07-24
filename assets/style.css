@@ -25,7 +25,7 @@ body {
   font-size: 1.6rem;
   overflow-x: hidden;
   background-image: url('../img/background.jpg');
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
