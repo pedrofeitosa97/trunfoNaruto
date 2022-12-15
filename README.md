@@ -2,4 +2,4 @@ Jogo que desenvolvi para estudos, trata-se de uma versão do famoso jogo TRUNFO,
 
 Utilizando apenas HTML, CSS, JavaScript
 
-Link do projeto: https://bobjoe159.github.io/trunfoNaruto/
+Link do projeto: https://pedrofeitosa97.github.io/trunfoNaruto/
